@@ -12,14 +12,7 @@
     <title>Pr&aacute;cticas</title>
 </head>
 <body onload="getRepositorie()">
-    <div class="container">
-        <div class="row">
-            <h1 class="display-1">Prácticas</h1>
-            <h6 class="lead">Programación Móvil</h6>
-            <span class="badge rounded-pill bg-dark w-auto g-3"><h6>Descripci&oacute;n</h6></span>
-            <a class="badge rounded-pill bg-success w-auto mx-4 g-3 enlace"><h6>Enlace</h6></a>
-            <p id="desc" class="h6"></p>
-            <script type="text/javascript">
+    <script type="text/javascript">
                 function getRepositorie() {
                     var request = new XMLHttpRequest();
                     request.open("GET", "https://api.github.com/users/guada8a/repos", true);
@@ -31,37 +24,64 @@
                 function show_list(user) {
                     var repo = user.find(repo => repo.name == "PrograMovil");
                     console.log(repo);
-                    console.log(repo.name);
+                    //Titulo
+                    var title = document.getElementById("title");
+                    title.append("Repo: ");
+                    //Owner
+                    var owner = document.getElementById("owner");
+                    //Avater
+                    var avatar = document.createElement("img");
+                    avatar.setAttribute("src", repo.owner.avatar_url);
+                    avatar.setAttribute("width", "50px");
+                    avatar.setAttribute("height", "50px");
+                    avatar.setAttribute("style", "border-radius: 50%;");
+                    owner.appendChild(avatar);
+                    owner.appendChild(document.createTextNode(repo.owner.login));
+                    title.appendChild(document.createTextNode(repo.name));
                     //Enlace nueva pestaña
                     var enlace = document.getElementsByClassName("enlace")[0];
                     enlace.setAttribute("href", repo.html_url);
-
+                    enlace.setAttribute("target", "_blank");
+                    enlace.appendChild(document.createTextNode(repo.html_url));
                     //Descripcion
                     var desc = document.getElementById("desc");
                     desc.appendChild(document.createTextNode(repo.description));
 
                 }
-            </script>
-        </div>
-        <hr>
+    </script>
+    <div class="container">
         <div class="row">
-            <div class="titulo">
-                <div class="col col-md-12 user-list">
+            <div class="col col-md-12 mx-auto">
+                <h1 class="display-1" id="title"></h1>
+                <h6 class="lead">Programación Móvil</h6>
+                <h5 id="owner"></h5>
+                <h4>Descripci&oacute;n</h4>
+                <h6 id="desc"></h6>  
+                <h4>Enlace: </h4><a class="enlace"></a>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-12 text-center user-list">
                 <h4 class="display-4 lead text-center">Prácticas</h4>
-                <div id="list">
-                    <div class="card">
+                <div id="list" class="row row-mt4">
                         <script>
                             for(let i=0; i<2; i++){
-                                document.write(`<div class='card-header'><h3 class='card-title'>Pr&aacute;ctica B${i+1}</h3></div><div class='card-body'><a href='' class='lead'>Ir a ==></a></div><br>`);
+                                document.write(`
+                                <div class='col col-md-3'>
+                                    <div class='card'>
+                                <div class='card-header'><h3 class='card-title'>Pr&aacute;ctica B${i+1}</h3></div>
+                                <div class='card-body'>
+                                    <a href='https://github.com/Guada8a/PrograMovil/tree/main/p${i+1}' class='btn btn-outline-success rounded-pill' target='_blank'>Ir a ruta</a>
+                                    <a href='https://guada8a.github.io/PrograMovil/p${i+1}/' class='btn btn-outline-warning rounded-pill' target='_blank'>Deployment</a>
+                                </div>
+                                </div>
+                                </div>`);
                             }
                         </script>
-                    </div>
                 </div>
             </div>
-
-            </div>
         </div>
-
     </div>
 </body>
 </html>
