@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- Bootstrap JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <title>Pr&aacute;cticas</title>
+    <!-- Bootrstrap 5.3-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <title>Pr&aacute;cticas</title>
 </head>
 <body onload="getRepositorie()">
     <script type="text/javascript">
@@ -27,6 +25,9 @@
                     //Titulo
                     var title = document.getElementById("title");
                     title.append("Repo: ");
+                    //Branch
+                    var branch = document.getElementById("branch");
+                    branch.append(repo.default_branch);
                     //Owner
                     var owner = document.getElementById("owner");
                     //Avater
@@ -37,6 +38,7 @@
                     avatar.setAttribute("style", "border-radius: 50%;");
                     owner.appendChild(avatar);
                     owner.appendChild(document.createTextNode(repo.owner.login));
+                    owner.setAttribute("href", repo.owner.html_url);
                     title.appendChild(document.createTextNode(repo.name));
                     //Enlace nueva pestaña
                     var enlace = document.getElementsByClassName("enlace")[0];
@@ -49,15 +51,31 @@
 
                 }
     </script>
+    <nav class="container-fluid p-2 mb-2" style="background-color: #010409;">
+        <h1 class="display-1" id="title"></h1>
+        <h4 class="bg-success rounded-pill text-center" style="width: 5%;" id="branch"></h4>
+    </nav>
     <div class="container">
         <div class="row">
             <div class="col col-md-12 mx-auto">
-                <h1 class="display-1" id="title"></h1>
-                <h6 class="lead">Programación Móvil</h6>
-                <h5 id="owner"></h5>
-                <h4>Descripci&oacute;n</h4>
-                <h6 id="desc"></h6>  
-                <h4>Enlace: </h4><a class="enlace"></a>
+                <div class="row">
+                    <div class="col col-md-6 col-sm-6 col-xs-12">
+                        <h6 class="lead">Programación Móvil</h6>
+                    </div>
+                    <div class="col col-md-6 col-sm-6 col-xs-12">
+                        <h5 class="rounded-pill w-25"><a id="owner"></a></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-6 col-sm-12 col-xs-12">
+                        <h5>Descripci&oacute;n</h5>
+                        <h6 id="desc"></h6>
+                    </div>
+                    <div class="col col-md-6 col-sm-12 col-xs-12">
+                        <h5>Enlace: </h5>
+                        <a class="enlace"></a>
+                    </div>
+                </div>
                 
             </div>
         </div>
@@ -68,14 +86,14 @@
                         <script>
                             for(let i=0; i<2; i++){
                                 document.write(`
-                                <div class='col col-md-3'>
+                                <div class='col col-md-3 col-sm-6 col-xs-12'>
                                     <div class='card'>
-                                <div class='card-header'><h3 class='card-title'>Pr&aacute;ctica B${i+1}</h3></div>
-                                <div class='card-body'>
-                                    <a href='https://github.com/Guada8a/PrograMovil/tree/main/p${i+1}' class='btn btn-outline-success rounded-pill' target='_blank'>Ir a ruta</a>
-                                    <a href='https://guada8a.github.io/PrograMovil/p${i+1}/' class='btn btn-outline-warning rounded-pill' target='_blank'>Deployment</a>
-                                </div>
-                                </div>
+                                        <div class='card-header'><h3 class='card-title'>Pr&aacute;ctica B${i+1}</h3></div>
+                                        <div class='card-body'>
+                                            <a href='https://github.com/Guada8a/PrograMovil/tree/main/p${i+1}' class='btn btn-outline-success rounded-pill' target='_blank'>Ir a ruta</a>
+                                            <a href='https://guada8a.github.io/PrograMovil/p${i+1}/' class='btn btn-outline-warning rounded-pill' target='_blank'>Deployment</a>
+                                        </div>
+                                    </div>
                                 </div>`);
                             }
                         </script>
