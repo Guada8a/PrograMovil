@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-blue,.btn-blue{
+	background-color: #00a2c3;
+}
+.btn-blue{
+	color: #fff;
+}
+.text-blue{
+	color: #00a2c3;
+}
+.accordion-button{
+    color: #fff !important;
+    background: #00a2c3;
+    background-color: #00a2c3 !important;
+}
+.accordion-button::after {
+    display: none;
+}
