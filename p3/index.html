@@ -11,6 +11,7 @@
 	<title>Pr&aacute;ctica 3</title>
 </head>
 <main>
+	<!-- Navbar -->
 	<nav class="navbar navbar-expand-md navbar-expand-xs navbar-dark bg-primary fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">Bootstrap</a>
@@ -48,7 +49,7 @@
 					<img src="./src/2.jpg" class="d-block w-100" alt="...">
 					<div class="row">
 						<div class="col col-md-12 mx-auto">
-							<div class="carousel-caption d-sm-block d-md-block">
+							<div class="carousel-caption d-none d-md-block">
 								<h5>Titulo Uno</h5>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur aperiam animi repellendus illum alias debitis architecto sint hic doloribus? Repellat rerum labore laboriosam dignissimos eum dolore, architecto eos fugit voluptates incidunt optio officia autem.</p>
 							</div>
@@ -59,7 +60,7 @@
 					<img src="./src/3.jpg" class="d-block w-100" alt="...">
 					<div class="row">
 						<div class="col col-md-12 mx-auto">
-							<div class="carousel-caption d-sm-block d-md-block">
+							<div class="carousel-caption d-none d-md-block">
 								<h5>Titulo Dos</h5>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur aperiam animi repellendus illum alias debitis architecto sint hic doloribus? Repellat rerum labore laboriosam dignissimos eum dolore, architecto eos fugit voluptates incidunt optio officia autem.</p>
 							</div>
@@ -70,7 +71,7 @@
 					<img src="./src/4.jpg" class="d-block w-100" alt="...">
 					<div class="row">
 						<div class="col col-md-12 mx-auto">
-							<div class="carousel-caption d-md-block d-sm-block">
+							<div class="carousel-caption d-none d-sm-block">
 								<h5>Titulo Tres</h5>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur aperiam animi repellendus illum alias debitis architecto sint hic doloribus? Repellat rerum labore laboriosam dignissimos eum dolore, architecto eos fugit voluptates incidunt optio officia autem.</p>
 							</div>
@@ -88,6 +89,7 @@
 			</button>
 		</div>
 	</div>
+	<!--Cards-->
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col col-md-10 text-center">
@@ -96,38 +98,36 @@
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam harum facere hic debitis consequatur culpa fuga distinctio cum! Ipsam repudiandae dolorum nulla labore odit, explicabo ipsa quis! Harum, distinctio expedita?
 				</p>
 			</div>
-
 			<div class="d-flex justify-content-center flex-wrap">
-				<div class="card-group">
-					<div class="card col-md-3 col-sm-12 col-12 mx-sm-2 mx-md-2">
-						<img src="./src/2.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<a href="#" class="btn btn-blue">Más información</a>
-						</div>
+				<div class="card col-md-3 col-sm-12 col-xs-12 mx-sm-2 mx-md-2">
+					<img src="./src/2.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<a href="#" class="btn btn-blue">Más información</a>
 					</div>
-					<div class="card col-md-3 col-sm-12 col-12 mx-sm-2 mx-md-5">
-						<img src="./src/3.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<a href="#" class="btn btn-blue">Más información</a>
-						</div>
+				</div>
+				<div class="card col-md-3 col-sm-12 col-xs-12 mx-sm-2 mx-md-5">
+					<img src="./src/3.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<a href="#" class="btn btn-blue">Más información</a>
 					</div>
-					<div class="card col-md-3 col-sm-12 col-12 mx-sm2 mx-md-4">
-						<img src="./src/4.jpg" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<a href="#" class="btn btn-blue">Más información</a>
-						</div>
+				</div>
+				<div class="card col-md-3 col-sm-12 col-xs-12 mx-sm2 mx-md-4">
+					<img src="./src/4.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<a href="#" class="btn btn-blue">Más información</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="p-5 bg-body-tertiary container-fluid">
+	<!--Jumbotron-->
+	<div class="p-5 mt-4 mb-4 bg-body-tertiary container-fluid">
 		<div class="container">
 			<h3 class="display-3">Hello, World!</h3>
 			<p class="col-md-12 lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
@@ -138,6 +138,7 @@
 			</button>
 		</div>
 	</div>
+	<!--Accordion-->
 	<div class="container collapse" id="collapseExample">
 		<div class="row justify-container-center">
 			<div class="col col-12 text-center">
@@ -147,47 +148,62 @@
 				</p>
 			</div>
 		</div>
-		<div class="row justify-container-center">
-			<div class="col col-12 col-md-6 col-sm-12 col-xs-12">
+		<div class="row justify-container-center mb-5">
+			<div class="col col-12 col-md-6 col-sm-12 col-xs-12 mb-2">
 				<div class="accordion accordion-flush" id="accordionFlushExample">
-					<div class="accordion-item p-3">
+					<div class="accordion-item">
 						<h2 class="accordion-header">
 							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
 								Accordion Item #1
 							</button>
 						</h2>
 						<div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
-							<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+							<div class="accordion-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
 						</div>
 					</div>
-					<div class="accordion-item p-3">
+					<div class="accordion-item">
 						<h2 class="accordion-header">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
 								Accordion Item #2
 							</button>
 						</h2>
 						<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-							<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+							<div class="accordion-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
 						</div>
 					</div>
 					<div class="accordion-item">
-						<h2 class="accordion-header p-3">
+						<h2 class="accordion-header">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
 								Accordion Item #3
 							</button>
 						</h2>
 						<div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-							<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+							<div class="accordion-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col col-12 col-md-6 col-sm-12 col-xs-12"></div>
+			<div class="col col-12 col-md-6 col-sm-12 col-xs-12">
+				<img class="card-img-top" src="./src/2.jpg">
+				<ul class="list-group">
+					<li class="list-group-item active" aria-current="true">Cras justo odio</li>
+					<li class="list-group-item">Dapibus ac facilisis in</li>
+					<li class="list-group-item">Morbi leo risus</li>
+					<li class="list-group-item">Porta ac consectetur ac</li>
+					<li class="list-group-item">Vestonulum at eros</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<footer class="d-flex flex-wrap py-3 border-top bg-dark">
 		<div class="container col col-md-12 col-xs-12 text-center">
-			<span class="mb-3 mb-md-0 text-white h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Anirni non esse ab architecto. Recusandae maiores, voluptas accusamus veritatis beatae assumenda veniam fugit esse sed voluptate totam iure! Fuga, dolores quisquam.</span>
+			<span class="mb-3 mb-md-0 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Anirni non esse ab architecto. Recusandae maiores, voluptas accusamus veritatis beatae assumenda veniam fugit esse sed voluptate totam iure! Fuga, dolores quisquam.</span>
 		</div>
 	</footer>
 </main>
