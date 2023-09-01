@@ -16,6 +16,10 @@
 .btn-blue{
     color: #fff;
 }
+.btn-blue:hover{
+    background-color: #00a2c3;
+    color: #fff;
+}
 .list-group-item{
     border-radius: 0% !important;
 }

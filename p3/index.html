@@ -14,7 +14,7 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-md navbar-expand-xs navbar-dark bg-primary fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="#">Bootstrap</a>
+			<a class="navbar-brand fw-normal fs-4" href="#">Bootstrap</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -26,11 +26,21 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">Link</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Dropdown</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Dropdown
+							</a>	
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">+5555 55555</a>
+							<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active fs-6" aria-current="page" href="#">+5555 55555</a>
 						</li>
 					</ul>
 				</div>
@@ -127,19 +137,19 @@
 		</div>
 	</div>
 	<!--Jumbotron-->
-	<div class="p-5 mt-4 mb-4 bg-body-tertiary container-fluid">
+	<div class="p-5 mt-4 mb-5 bg-body-tertiary container-fluid">
 		<div class="container">
 			<h3 class="display-3">Hello, World!</h3>
 			<p class="col-md-12 lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
 			<hr>
 			<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-			<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			<button class="btn btn-blue mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 				Learn More
 			</button>
 		</div>
 	</div>
 	<!--Accordion-->
-	<div class="container collapse" id="collapseExample">
+	<div class="container collapse mt-5" id="collapseExample">
 		<div class="row justify-container-center">
 			<div class="col col-12 text-center">
 				<h5 class="display-5">Lorem, ipsum dolor.</h5>
