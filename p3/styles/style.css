@@ -4,25 +4,15 @@
 }
 .accordion-button{
     color: #fff !important;
-    background: #00a2c3;
-    background-color: #00a2c3 !important;
+    background: #0dcaf0;
+    background-color: #0dcaf0 !important;
 }
 .accordion-button::after {
     display: none;
 }
-.bg-blue,.btn-blue, .accordion-header, .list-group-item.active{
-    background-color: #00a2c3;
-}
-.btn-blue{
-    color: #fff;
-}
-.btn-blue:hover{
-    background-color: #00a2c3;
-    color: #fff;
+.accordion-header, .list-group-item.active{
+    background-color: #0dcaf0;
 }
 .list-group-item{
     border-radius: 0% !important;
-}
-.text-blue{
-    color: #00a2c3;
 }
