@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootrstrap 5.3-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./styles/style.css">
+	<title>Pr&aacute;ctica 4</title>
+</head>
+<body>
+    <header class="container">
+        <div class="row">
+            <div class="col col-md-4 my-auto">
+                <div class="row">
+                    <div class="col col-md-4">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="..." class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text">Aqui va encabezado 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-4">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="..." class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text">Aqui va encabezado 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-4">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="..." class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text">Aqui va encabezado 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 d-flex justify-content-center my-auto">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Marca.svg/1280px-Marca.svg.png" alt="" width="200rem">
+            </div>
+            <!--IDIOMA-->
+            <div class="col col-md-1 d-flex justify-content-end my-auto">
+                <div id="header-edition-selector" class="edition-selector" aria-label="Selector de ediciones">
+                    <button type="button" class="btn border-secondary-subtle" data-bs-container="body" data-bs-toggle="#header-edition-selector__menu" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                        <span class="hidden-content">Edición seleccionada</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" role="img" aria-hidden="true">
+                            <path fill="#FFFFFF" d="M3,6h18v12H3V6z"></path>
+                            <path fill="#006847" d="M3,6h6v12H3V6z"></path>
+                            <path fill="#CE1126" d="M15,6h6v12h-6V6z"></path>
+                            <circle fill="#C0C2A3" cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        MX 
+                        <i class="iconsvg iconsvg-down-a"></i>
+                    </button>
+                    <!--
+                    <div id="header-edition-selector__menu" class="edition-selector__menu" role="menu" tabindex="0" aria-hidden="false" aria-label="Selector de ediciones Marca.com">
+                        <p class="edition-selector__menu-title">Ediciones:</p>
+                        <ul class="edition-selector__menu-list">
+                        <li class="list-option list-option-spain">
+                            <a href="https://www.marca.com/?intcmp=BOTONPORTADA&amp;s_kw=portada&amp;ue_guest"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="#FFC400" d="M3,6h18v12H3V6z"></path><path fill="#C60B1E" d="M3,6h18v3H3V6z M3,15h18v3H3V15z"></path></svg>
+                                ES (España)
+                            </a>
+                        </li>
+                        <li class="list-option list-option-english">
+                            <a href="https://www.marca.com/en/?intcmp=BOTONPORTADA&amp;s_kw=portada"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" role="img" aria-hidden="true"><circle fill="#AED6F1" cx="12" cy="12" r="8.5"></circle><g><path fill="#34495E" d="M16.116,7.003l0.018,0.134l-0.2,0.042l-0.026,0.284h0.239l0.319-0.03l0.164-0.197l-0.174-0.067l-0.097-0.11 l-0.144-0.234l-0.069-0.33l-0.271,0.056L15.8,6.667v0.131l0.132,0.089L16.116,7.003z"></path><path fill="#34495E" d="M15.887,7.113l0.012-0.178l-0.157-0.069L15.52,6.917l-0.166,0.265v0.172h0.192L15.887,7.113z M11.313,7.871 l-0.049,0.126h-0.236v0.122h0.056l0.008,0.06l0.146-0.012l0.091-0.056l0.023-0.113l0.117-0.01l0.047-0.095l-0.107-0.022H11.313z M10.704,8.093l-0.009,0.119l0.171-0.014l0.018-0.12l-0.103-0.081L10.704,8.093z"></path><path fill="#34495E" d="M20.998,11.907c-0.007-1.108-0.223-2.205-0.635-3.233l-0.068-0.172c-0.434-1.023-1.055-1.958-1.829-2.755 C16.773,3.991,14.439,3,12,3C9.741,2.998,7.565,3.85,5.907,5.384C5.533,5.729,5.188,6.104,4.878,6.508 C3.659,8.079,2.999,10.012,3,12c0,4.963,4.038,9,9,9c3.491,0,6.521-2,8.014-4.911C20.662,14.823,21,13.422,21,12L20.998,11.907z M19.305,8.311l0.053-0.059c0.067,0.133,0.133,0.268,0.192,0.404l-0.085-0.003l-0.16,0.022V8.311z M18.003,6.739l0.002-0.401 c0.142,0.149,0.278,0.304,0.408,0.464l-0.163,0.24l-0.566-0.004L17.648,6.92L18.003,6.739z M7.147,5.74V5.726h0.18l0.016-0.063 h0.295v0.128L7.554,5.905H7.146L7.147,5.74z M7.435,6.142c0,0,0.181-0.031,0.195-0.031c0.016,0,0,0.179,0,0.179L7.224,6.317 L7.147,6.225L7.435,6.142z M19.878,9.715h-0.659l-0.4-0.299l-0.422,0.041v0.258h-0.135l-0.145-0.103l-0.73-0.185V8.953 l-0.928,0.072l-0.288,0.154h-0.366l-0.181-0.018l-0.447,0.248v0.466l-0.913,0.66l0.075,0.281h0.187l-0.049,0.267l-0.131,0.048 l-0.007,0.7l0.789,0.899h0.345l0.021-0.056h0.616l0.18-0.165h0.35l0.192,0.193l0.522,0.054l-0.07,0.694l0.58,1.023l-0.307,0.582 l0.021,0.274l0.24,0.239v0.66l0.315,0.426v0.549h0.271c-1.565,1.932-3.92,3.054-6.406,3.054c-4.552,0-8.257-3.704-8.257-8.26 c0-1.146,0.234-2.239,0.658-3.232V8.51l0.296-0.358c0.103-0.194,0.212-0.383,0.329-0.566l0.014,0.149L4.696,8.151 c-0.107,0.2-0.207,0.405-0.297,0.616v0.47l0.344,0.165v0.654l0.329,0.562l0.268,0.041l0.034-0.192L5.059,9.979L4.997,9.506h0.186 l0.078,0.487l0.455,0.666l-0.117,0.214l0.291,0.445l0.721,0.178V11.38l0.287,0.041L6.87,11.627l0.227,0.041l0.351,0.096 l0.494,0.563l0.632,0.047l0.061,0.517l-0.432,0.301l-0.02,0.459L8.12,13.932l0.625,0.783l0.046,0.268c0,0,0.227,0.063,0.255,0.063 c0.028,0,0.509,0.364,0.509,0.364v1.414l0.17,0.048l-0.115,0.65l0.287,0.385l-0.053,0.646l0.381,0.671l0.489,0.426l0.491,0.011 l0.049-0.159l-0.361-0.305l0.021-0.15l0.065-0.186l0.013-0.188l-0.245-0.007l-0.123-0.154l0.203-0.195l0.027-0.147l-0.227-0.063 l0.014-0.139l0.323-0.049l0.491-0.234l0.164-0.303l0.516-0.658l-0.117-0.516l0.158-0.273l0.473,0.014l0.318-0.252L13.07,14.7 l0.354-0.45l0.063-0.289l-0.323-0.104l-0.213-0.349L12.224,13.5l-0.576-0.22l-0.027-0.411l-0.193-0.336l-0.521-0.008l-0.301-0.474 l-0.268-0.131l-0.014,0.145l-0.487,0.029l-0.179-0.249L9.15,11.743l-0.42,0.484l-0.659-0.111l-0.047-0.743L7.542,11.29l0.193-0.364 L7.68,10.717l-0.632,0.422l-0.397-0.048L6.509,10.78l0.088-0.32l0.219-0.404L7.32,9.801L8.294,9.8l-0.002,0.298l0.35,0.162 L8.614,9.752l0.252-0.254l0.509-0.333l0.036-0.236L9.919,8.4l0.539-0.299l-0.046-0.04l0.365-0.344l0.135,0.036l0.061,0.077 l0.139-0.154l0.035-0.015L10.995,7.64l-0.154-0.051v-0.15l0.082-0.067h0.18l0.082,0.037l0.072,0.144l0.087-0.013V7.527l0.025,0.008 l0.253-0.039l0.035-0.124L11.8,7.409v0.133l-0.133,0.093l0.02,0.146l0.459,0.142v0.006l0.106-0.009l0.007-0.199l-0.363-0.165 L11.874,7.46l0.303-0.104l0.014-0.288l-0.317-0.192l-0.02-0.487l-0.433,0.212h-0.158l0.042-0.37l-0.589-0.139l-0.243,0.184v0.561 l-0.438,0.139L9.858,7.343L9.669,7.374V6.906L9.257,6.849L9.052,6.715L8.969,6.412L9.704,5.98l0.361-0.109l0.036,0.242l0.2-0.011 l0.016-0.121l0.21-0.03l0.004-0.043L10.44,5.871l-0.02-0.129l0.259-0.021l0.155-0.162l0.009-0.012h0.002l0.047-0.049l0.543-0.068 l0.239,0.204l-0.629,0.335l0.8,0.188l0.104-0.268H12.3l0.124-0.233l-0.248-0.063V5.3l-0.775-0.344l-0.535,0.062l-0.303,0.158 l0.021,0.385l-0.316-0.048L10.219,5.3l0.302-0.275L9.972,4.998L9.814,5.045L9.746,5.23l0.206,0.035L9.911,5.471l-0.35,0.021 L9.507,5.629L8.999,5.643c0,0-0.014-0.288-0.035-0.288l0.398-0.007l0.302-0.295L9.499,4.97L9.28,5.183L8.915,5.162L8.696,4.86 H8.229L7.742,5.224h0.446l0.041,0.131L8.113,5.462l0.495,0.014l0.074,0.178l-0.556-0.02L8.1,5.497L7.75,5.421L7.564,5.318 L7.147,5.321C8.556,4.292,10.255,3.739,12,3.74c2.089,0,3.997,0.78,5.452,2.063l-0.099,0.176l-0.381,0.149l-0.16,0.174l0.037,0.203 l0.196,0.027l0.118,0.296l0.34-0.136l0.055,0.396h-0.102L17.18,7.047L16.871,7.1l-0.299,0.422l-0.428,0.067l-0.063,0.365 l0.182,0.043L16.21,8.232l-0.424-0.086l-0.39,0.086l-0.082,0.217l0.066,0.454l0.229,0.107l0.384-0.003l0.259-0.022l0.078-0.207 l0.404-0.525l0.268,0.054l0.262-0.237l0.049,0.185l0.645,0.436L17.88,8.797l-0.291-0.016L17.7,8.94l0.18,0.039l0.209-0.088 L18.084,8.64l0.092-0.047l-0.074-0.079l-0.43-0.24l-0.111-0.319h0.356l0.114,0.113l0.309,0.265l0.014,0.321l0.318,0.34l0.119-0.465 l0.221-0.121l0.043,0.381l0.215,0.237L19.7,9.018c0.084,0.214,0.157,0.433,0.225,0.655L19.878,9.715z M7.909,7.089l0.216-0.103 l0.196,0.047L8.253,7.295L8.042,7.362L7.909,7.089z M9.056,7.707v0.17H8.563L8.378,7.825l0.045-0.119l0.238-0.098h0.324v0.098 L9.056,7.707L9.056,7.707z M9.284,7.944v0.165L9.16,8.188L9.006,8.217V7.944H9.284L9.284,7.944z M9.145,7.877V7.681l0.17,0.155 L9.145,7.877z M9.222,8.273v0.161L9.104,8.552H8.841l0.041-0.18l0.125-0.011l0.025-0.063L9.222,8.273z M8.567,7.944H8.84 L8.49,8.433L8.347,8.355l0.031-0.206L8.567,7.944L8.567,7.944z M9.685,8.217v0.16H9.423L9.351,8.273V8.124h0.021L9.685,8.217z M9.442,7.997l0.075-0.08l0.126,0.08L9.542,8.08L9.442,7.997z M20.012,10.132l0.026-0.03l0.03,0.141L20.012,10.132z"></path><path fill="#34495E" d="M4.399,8.51v0.258c0.09-0.21,0.189-0.415,0.297-0.616L4.399,8.51z"></path></g></svg>EN (English)
+                            </a>
+                        </li>
+                        <li class="list-option list-option-mexico">
+                            <a href="https://www.marca.com/mx/?intcmp=BOTONPORTADA&amp;s_kw=portada" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="#FFFFFF" d="M3,6h18v12H3V6z"></path><path fill="#006847" d="M3,6h6v12H3V6z"></path><path fill="#CE1126" d="M15,6h6v12h-6V6z"></path><circle fill="#C0C2A3" cx="12" cy="12" r="2"></circle></svg>
+                                MX (México)
+                            </a>
+                        </li>
+                        <li class="list-option list-option-usa">
+                            <a href="https://us.marca.com/?intcmp=BOTONPORTADA&amp;s_kw=portada"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="isolation:isolate" viewBox="201.5 111 24 21" role="img" aria-hidden="true"><path fill="#FFF" d="M204.5 115.5h18v12h-18v-12z"></path><path fill="#B22234" d="M204.5 115.5h18v1h-18v-1zm0 2h18v1h-18v-1zm0 1.8h18v1h-18v-1zm0 1.8h18v1h-18v-1zm0 1.9h18v1h-18v-1zm0 1.8h18v1h-18v-1zm0 1.7h18v1h-18v-1z"></path><path fill="#3C3B6E" d="M204.5 115.5h9.2v6.5h-9.2v-6.5z"></path><path fill="#FFF" d="M204.9 116.1l.3.1-.1.3.2-.2.2.2v-.3l.1-.1h-.1l-.1-.3-.1.3h-.4zm1.6 0l.2.1-.2.3.2-.2.2.2v-.3l.2-.1h-.3v-.3l-.2.3h-.1zm1.5 0l.2.1v.3l.1-.2.3.2-.1-.3.2-.1h-.3v-.3l-.1.3h-.3zm1.5 0l.2.1v.3l.2-.2.2.2-.1-.3.2-.1h-.3v-.3l-.1.3h-.3zm1.5 0l.3.1-.1.3.2-.2.2.2v-.3l.1-.1h-.2l-.1-.3-.1.3h-.3zm1.6 0l.2.1-.1.3.2-.2.2.2v-.3l.2-.1h-.3v-.3l-.2.3h-.2zm-6.9.6l.2.2v.2l.2-.1.2.1-.1-.2.2-.2h-.3v-.2l-.1.2h-.3zm1.5 0l.2.2v.2l.2-.1.2.1v-.2l.1-.2h-.2l-.2-.2-.1.2h-.2zm1.5 0l.3.2-.1.2.2-.1.2.1v-.2l.2-.2h-.3l-.1-.2v.2h-.4zm1.6 0l.2.2v.2l.1-.1.2.1v-.2l.2-.2h-.3v-.2l-.2.2h-.2zm1.5 0l.2.2v.2l.2-.1.2.1-.1-.2.2-.2h-.3v-.2l-.1.2h-.3zm-6.9.6l.3.2-.1.3.2-.2.2.2v-.3l-.1-.3-.1.3-.4-.2zm1.6 0l.2.2-.1.3.2-.2.2.2v-.3l.2-.1h-.3v-.3l-.2.3-.2-.1zm1.5 0l.2.2v.3l.1-.2.3.2-.1-.3.2-.1h-.3v-.3l-.1.3-.3-.1zm1.5 0l.2.2v.3l.2-.2.2.2-.1-.3.2-.1h-.3v-.3l-.1.3-.3-.1zm1.5 0l.3.2-.1.3.2-.2.2.2v-.3l.1-.1h-.2l-.1-.3-.1.3-.3-.1zm1.6 0l.2.2-.1.3.2-.2.2.2v-.3l.2-.1h-.3v-.3l-.2.3-.2-.1zm-6.9.7l.2.2v.2l.2-.2.2.2-.1-.2.2-.2h-.2l-.1-.3-.1.3h-.3zm1.5 0l.3.2-.1.2.2-.2.2.2v-.2l.1-.2h-.2l-.2-.3v.3h-.3zm1.6 0l.2.2-.1.2.2-.2.2.2v-.2l.2-.2h-.3v-.3l-.2.3h-.2zm1.5 0l.2.2v.2l.1-.2.3.2-.1-.2.2-.2h-.3v-.3l-.1.3h-.3zm1.5 0l.2.2v.2l.2-.2.2.2-.1-.2.2-.2h-.2l-.1-.3-.1.3h-.3zm-6.8.5l.2.2-.1.2.2-.1.2.1v-.2l.2-.2h-.3l-.2.2-.2-.2zm1.5 0l.2.2v.2l.1-.1.3.1-.1-.2.2-.2h-.3l-.1.2-.3-.2zm1.5 0l.2.2v.2l.2-.1.2.1-.1-.2.2-.2h-.2l-.1.2-.4-.2zm1.5 0l.3.2-.1.2.2-.1.2.1v-.2l.1-.2H209.9l-.1.2-.3-.2zm1.6 0l.2.2-.1.2.2-.1.2.1v-.2l.2-.2h-.3l-.2.2-.2-.2zm1.5 0l.2.2v.2l.1-.1.3.1-.1-.2.2-.2h-.3l-.1.2-.3-.2zm-7.6 1.4l.2.2-.1.2.2-.1.2.1v-.2l.2-.2h-.3v-.3l-.2.3h-.2zm1.5 0l.2.2v.2l.2-.1.2.1-.1-.2.2-.2h-.3v-.3l-.1.3h-.3zm1.5 0l.2.2v.2l.2-.1.2.1v-.2l.1-.2h-.2l-.1-.3-.1.3h-.3zm1.5 0l.3.2-.1.2.2-.1.2.1v-.2l.2-.2h-.3l-.1-.3v.3h-.4zm1.6 0l.2.2v.2l.1-.1.2.1v-.2l.2-.2h-.3v-.3l-.2.3h-.2zm1.5 0l.2.2v.2l.2-.1.2.1-.1-.2.2-.2h-.3v-.3l-.1.3h-.3zm-7.6 1.3l.2.1-.1.3.2-.2.2.2v-.3l.2-.1h-.3v-.3l-.2.3h-.2zm1.5 0l.2.1v.3l.1-.2.3.2-.1-.3.2-.1h-.3v-.3l-.2.3h-.2zm1.5 0l.2.1v.3l.2-.2.2.2-.1-.3.2-.1h-.2v-.3l-.1.3h-.4zm1.5 0l.2.1v.3l.2-.2.2.2v-.3l.1-.1h-.2l-.1-.3-.1.3h-.3zm1.6 0l.2.1-.1.3.2-.2.2.2v-.3l.2-.1h-.3v-.3l-.2.3h-.2zm1.5 0l.2.1v.3l.1-.2.3.2-.1-.3.2-.1h-.3v-.3l-.2.3h-.2zm-6.9-2l.2.2v.3l.2-.2.2.2v-.3l.1-.1h-.2l-.1-.3-.1.3-.3-.1zm1.5 0l.3.3-.1.3.1-.3.2.2v-.3l.2-.1h-.3l-.1-.3v.3l-.3-.1zm1.6 0l.2.2-.1.3.2-.2.2.2v-.3l.2-.1h-.3v-.3l-.2.3-.2-.1zm1.5 0l.2.3v.3-.3l.3.2-.1-.3.2-.1h-.3v-.3l-.1.3-.2-.1zm1.5 0l.2.2v.3l.2-.2.2.2v-.3l.1-.1h-.2l-.1-.3-.1.3-.3-.1zm-6 1.3l.1.2v.2l.2-.1.2.2-.1-.3.2-.2h-.2l-.1-.2-.1.2h-.2zm1.4 0l.3.2-.1.2.2-.1.2.2v-.3l.1-.2h-.2l-.2-.2v.2h-.3zm1.6 0l.2.2-.1.2.2-.1.2.2v-.3l.2-.2h-.3v-.2l-.2.2h-.2zm1.5 0l.2.2v.2l.1-.1.3.2-.1-.3.2-.2h-.3v-.2l-.2.2h-.2zm1.5 0l.2.2v.2l.2-.1.2.2-.1-.3.2-.2h-.2l-.1-.2-.1.2h-.3z"></path><path fill="none" d="M201.5 111h24v21h-24z"></path></svg>
+                                US (USA)
+                            </a>    
+                        </li>
+                        </ul>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="col col-md-3 my-auto">
+                <button class="btn btn-danger fw-bold">Suscribete</button>
+                <button class="btn btn-danger-outline fw-bold">Iniciar sesi&oacute;n</button>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-md navbar-expand-xs navbar-dark" style="background-color: #c00; height: 44px;">
+        <div class="container">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="navbar-brand fw-bold fs-5 nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        F&uacute;tbol
+                    </a>	
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-brand fw-bold fs-5 nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Baloncesto
+                    </a>	
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-brand fw-bold fs-5 nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Motor
+                    </a>	
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-brand fw-bold fs-5 nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Polideportivo
+                    </a>	
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-brand fw-bold fs-5 nav-item">
+                    <a class="nav-link text-white" href="#">Más +</a>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-end" id="navbarText">
+                <form class="d-flex" role="search">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Buscar en marca.com" aria-label="Search" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search rotate-right" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Main -->
+    <div class="container">
+        
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <!--Jumbotron-->
+        <div class="p-5 bg-dark text-white">
+            <div class="container">
+                <p class="fs-5 fw-bold text-center" style="margin-top: -3rem;margin-bottom: -1.4rem;">Otras webs de Unidad Editorial</p>
+                <hr/>
+                <div class="row mt-4">
+                    <div class="col col-md-3 col-sm-2 col-xs-12">
+                        <p class="h6 fw-bold">Marca</p>
+                        <p class="l-f">App marca</p>
+                        <p class="l-f">Apuestas Deportivas</p>
+                        <p class="l-f">Clasificaci&oacute;n LaLiga</p>
+                        <p class="l-f">Calendario LaLiga</p>
+                        <p class="l-f">Hemeroteca Marca</p>
+                        <p class="l-f">Marca eSports</p>
+                        <p class="l-f">Marca Madrid</p>
+                        <p class="l-f">Marca en Orbyt</p>                        
+                        <p class="l-f">Zona Marca</p>
+                    </div>
+                    <div class="col col-md-3 col-sm-2 col-xs-12">
+                        <p class="h6 fw-bold">Ocio y Media</p>
+                        <p class="l-f">Tiramillas</p>
+                        <p class="l-f">Moda - Telva</p>
+                        <p class="l-f">BUHO Magazine</p>
+                        <p class="l-f">Traductor</p>
+                        <p class="l-f">Programaci&oacute;n TV</p>
+                        <p class="l-f">Marca Entradas</p>
+                        <p class="l-f">Mi beb&eacute; y yo</p>
+                    </div>
+                    <div class="col col-md-3 col-sm-2 col-xs-12">
+                        <p class="h6 fw-bold">Unidad Editorial</p>
+                        <p class="l-f">El Mundo</p>
+                        <p class="l-f">Expansi&oacute;n</p>
+                        <p class="l-f">Cu&iacute;datePlus</p>
+                        <p class="l-f">Diario M&eacute;dico</p>
+                        <p class="l-f">Correo Farmace&uacute;tico</p>
+                        <p class="l-f">Suscripci&oacute;n Marca</p>
+                        <p class="l-f">Suscripci&oacute;n El Mundo</p>
+                    </div>
+                    <div class="col col-md-3 col-sm-2 col-xs-12">
+                        <p class="h6 fw-bold">Formaci&oacute;n y Empleo</p>
+                        <p class="l-f">Escuela Unidad Editorial</p>
+                        <p class="l-f">Unidad Editorial</p>
+                        <p class="l-f">Expansi&oacute;n y Empleo</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <section class="bg-white text-center">
+            <p class="fw-bold l-f">
+                &COPY; Agosto 2018 Unidad Editorial Informaci&oacute;n Deportiva, S.L.U. Todos los derechos reservados.
+            </p>
+            <p>
+                T&eacute;rminos y condiciones   Pol&iacute;tica de privacidad   Pol&iacute;tica de cookies   Certificado por OJD   Contacto   Publicidad   Ayuda   Nuestro Equipo   Venta de contenidos
+            </p>
+        </section>
+        
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
