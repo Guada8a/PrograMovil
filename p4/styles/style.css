@@ -1,95 +1,147 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.navbar{
-    top:10%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Estilos generales de la barra de noticias */
+.breadcumb {
+  background-color: #fff;
+  color: #333;
+  overflow: hidden;
 }
 
-.btn-danger{
-    background-color: #c00;
-}
-.btn-danger:hover{
-    background-color: black;
-    color: white;
-    border: black;
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.btn-danger-outline{
-    background-color: transparent;
-    color: #c00;
-    border-color: #c00;
-}
-.btn-danger-outline:hover{
-    background-color: black;
-    color: white;
+/* Estilos de la lista de noticias */
+.list-seo-links.horizontal {
+  list-style-type: none;
+  padding: 0;
+  white-space: nowrap;
 }
 
-.navbar-nav>li>.nav-link:hover{
-    background: black !important;
+.list-seo-links.horizontal li {
+  display: inline;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.list-seo-links.horizontal li:not(:first-child)::before {
+  content: "/";
+}
+
+.list-seo-links.horizontal a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilos para el marquee */
+.list-seo-links.horizontal {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Comenzar desde la derecha */
+  }
+  100% {
+    transform: translateX(-100%); /* Mover hacia la izquierda */
+  }
+}
+.navbar {
+  top: 0;
+  position: sticky;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  background-color: #c00;
+}
+@media screen and (max-width: 800px) {
+  .nav ul {
+    flex-direction: column;
+  }
+}
+.btn-danger {
+  background-color: #c00;
+}
+.btn-danger:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-danger-outline {
+  background-color: transparent;
+  color: #c00;
+  border: 1px solid gray;
+}
+.btn-danger-outline:hover {
+  background-color: black;
+  color: white;
+}
+.navbar-nav > li > .nav-link:hover {
+  background: black !important;
 }
 
 /* Footer siempre abajo no importa el contenido incluso si hay scroll*/
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 body {
-    margin-bottom: 60px; /* Margin bottom by footer height */
+  margin-bottom: 60px; /* Margin bottom by footer height */
 }
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: fit-content; /* Set the fixed height of the footer here */
-    line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: fit-content; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
 }
 
-hr{
-    border: 1px solid;
+hr {
+  border: 1px solid;
 }
 
-select{
-    width: fit-content;
-    padding: 10px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-header{
-    margin-top:1rem !important;
+select {
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.hidden-content{
-    display: none;
+.hidden-content {
+  display: none;
 }
-.edition-selector__btn{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 1%;
+.edition-selector__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1%;
 }
 .rotate-right {
-    transform: rotate(90deg); /* Rotación de 90 grados (derecha) */
-    transition: transform 0.3s ease; /* Agrega una transición suave para la animación */
-    background-color: transparent;
-    border:none
+  transform: rotate(90deg); /* Rotación de 90 grados (derecha) */
+  transition: transform 0.3s ease; /* Agrega una transición suave para la animación */
+  background-color: transparent;
+  border: none;
 }
 
 .rotate-right:hover {
-    transform: rotate(0deg); /* Vuelve a la posición original al pasar el mouse */
+  transform: rotate(0deg); /* Vuelve a la posición original al pasar el mouse */
 }
 
-.l-f{
-    margin-bottom: -2.8rem !important;
+.l-f {
+  margin-bottom: -2.8rem !important;
 }
