@@ -434,6 +434,19 @@ a {
     font-weight: 600;
     text-transform: uppercase;
 }
+.title-news-red{
+    font-size: 1rem !important;
+    word-break: break-word;
+    color: #c00;
+    display: inline;
+    font-family: Barlow Semi Condensed,Arial,Helvetica,sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .875rem !important;
+    margin-bottom: 0.25rem;
+}
+
+/*f5f7fa*/
 .card{
     border: none !important;
     border-radius: 0%;
@@ -441,11 +454,17 @@ a {
 .card-body{
     padding: 0 !important;
 }
+.card-body-right{
+    font-family: Barlow Semi Condensed,Arial,Helvetica,sans-serif;
+    font-size: 1.1875rem;
+    line-height: 1.21875rem;
+    letter-spacing: 0;
+}
 .card-img-top{
     border-radius: 0%;
 }
 /*Oscurecer la imagen en la parte de abajo*/
-.card-img-overlay{
+.card-img-overlay:not(.card-img-overlay.card-overlay-2){
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 }
 /*Title-notice al final*/
@@ -462,8 +481,31 @@ a {
     font-weight: 800;
     text-decoration: none;
 }
+.card-v2{
+    font-family: Roboto Condensed,Arial,Helvetica,sans-serif;
+    font-weight: 800;
+}
 .author{
     color: #000 !important;
     font-family: Roboto Condensed,Arial,Helvetica,sans-serif;
     font-weight: 800;
+}
+.author-mini{
+    color: #000 !important;
+    font-family: Roboto Condensed,Arial,Helvetica,sans-serif;
+    font-weight: 800;
+    font-size: 0.75rem;
+}
+.card-mini{
+    background-color: #f7f5fa;
+}
+
+.social-networks{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.social-networks li{
+    margin-right: 0.5em;
 }
