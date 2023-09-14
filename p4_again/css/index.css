@@ -481,6 +481,9 @@ a {
     font-weight: 800;
     text-decoration: none;
 }
+.title-notice a:hover{
+    color: #f4f4f4 !important;
+}
 .card-v2{
     font-family: Roboto Condensed,Arial,Helvetica,sans-serif;
     font-weight: 800;
@@ -508,4 +511,33 @@ a {
 }
 .social-networks li{
     margin-right: 0.5em;
+}
+select.form-select{
+    font-size: small;
+}
+.equipoCarrusel img{
+    width: 14%;
+    height: 14%;
+}
+.equipoCarrusel{
+    font-size: smaller;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    overflow: hidden;
+}
+.equipoCarrusel>p{
+    margin-bottom: -1% !important;
+}
+.card-resultado{
+    border: 1px solid rgb(214,213,213) !important;
+    /*shadow*/
+    box-shadow: 0 0 0 0.25rem rgb(214 213 213 / 50%);
+    border-radius: 0%;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    /*Poner siempre al frente*/
+    z-index: 1000;
 }
