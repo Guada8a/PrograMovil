@@ -375,6 +375,8 @@ a {
     left: 0 !important;
     width: 80em !important;
     position: fixed;
+    border-radius: 0% !important;
+    border: none !important;
 }
 /* Media query para el menú */
 /*Para que se vea bien en el móvil*/
@@ -394,7 +396,7 @@ a {
 .header-column-main {
 	font-family: Roboto, Arial, Helvetica, sans-serif;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 14px;
 	color: #5d6d7e;
 	
 }
@@ -498,8 +500,8 @@ li {
 	font-weight: 800;
 	text-decoration: none;
 }
-.title-notice a:hover {
-	color: #f4f4f4 !important;
+.title-notice-child:hover {
+	color: #c1bfbf !important;
 }
 .card-v2 {
 	font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
@@ -564,6 +566,7 @@ select.form-select {
 	width: 2em !important;
 	height: 2em !important;
 	top: 50%;
+    opacity: 0.4;
 }
 /* Inicialmente, oculta el menú desplegable */
 .dropdown-menu {
