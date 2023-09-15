@@ -50,7 +50,7 @@
 /* Header */
 .main-header {
 	font-family: robotoRegular, Arial, sans-serif;
-	font-size: 16px;
+	font-size: 12px;
 }
 .main-header .main-top-header-container {
 	background-color: #fff;
@@ -159,10 +159,10 @@ a {
 	height: 60px;
 }
 /*Alinerar a la derecha*/
-.tools-header{
-    display: flex;
-    justify-content: flex-end !important;
-    align-items: center;
+.tools-header {
+	display: flex;
+	justify-content: flex-end !important;
+	align-items: center;
 }
 .main-header .edition-selector {
 	float: left;
@@ -313,10 +313,11 @@ a {
 	height: 0;
 	transition: opacity 0.3s ease-out 0s, height 0.1s ease-out 0s;
 }
-.main-header.portada .patrocinio svg,  .main-highlight-radio svg {
+.main-header.portada .patrocinio svg,
+.main-highlight-radio svg {
 	height: 41px !important;
 	width: 30px !important;
-    font-size: xx-small ;
+	font-size: xx-small;
 }
 
 .btn-danger {
@@ -341,7 +342,7 @@ a {
 }
 /* Dejar el hover cuando se hace click */
 .navbar-nav > li > .nav-link.show:not(.nav1-item) {
-    background: rgba(20, 29, 37, 0.97) !important;
+	background: rgba(20, 29, 37, 0.97) !important;
 }
 /* Estilo para el logotiporgba(20,29,37,.97) "M" dentro del rectángulo con esquinas diagonales */
 .logo-letter {
@@ -359,185 +360,241 @@ a {
 	display: none;
 }
 
-.navTeam{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navTeam {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-
-.div-menu-navbar{
+.navbar-brand {
+	margin-right: 0 !important;
+}
+.div-menu-navbar {
     background: rgba(20, 29, 37, 0.97) !important;
-    color:white !important;
+    color: white !important;
     margin-top: -0.16em !important;
     left: 0 !important;
     width: 80em !important;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    
+    position: fixed;
+}
+/* Media query para el menú */
+/*Para que se vea bien en el móvil*/
+@media (max-width: 768px) {
+    .div-menu-navbar {
+        width: 100% !important;
+    }
 }
 
-.dropdown-item-div{
-    color: white;
+.dropdown-item-div {
+	color: white;
 }
-.header-column{
-    margin-top: 0.8em;
-    list-style: none;
+.header-column {
+	margin-top: 0.8em;
+	list-style: none;
 }
-.header-column-main{
-    font-family: Roboto,Arial,Helvetica,sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    color: #5d6d7e;
-    margin-bottom: 8px;
+.header-column-main {
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: #5d6d7e;
+	
 }
-.header-column-main-h1{
-    font-family: Roboto,Arial,Helvetica,sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    color:#fff;
-    margin-bottom: 8px;
+.header-column-main-h1 {
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: #fff;
 }
-.header-column-main-content a{
-    font-family: Roboto,Arial,Helvetica,sans-serif;
-    text-decoration: none;
-    font-weight:normal;
-    font-size: 13px;
-    color: #aeb6bf;
+.header-column-main-content a {
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 10px;
+	color: #aeb6bf;
 }
-.header-column-main-content a:hover, .header-column-main-h1:hover{
-    color: #c00;
-    cursor: pointer;
+.header-column-main-content a:hover,
+.header-column-main-h1:hover {
+	color: #c00;
+	cursor: pointer;
 }
-.dropdown-menu:hover .dropdown-item-div:hover{
-    display: block;
+.dropdown-menu:hover .dropdown-item-div:hover {
+	display: block;
 }
-.bi-chevron-down{
-    color: white;
-    opacity: 0.5;
-    font-size: 0.7em;
+.bi-chevron-down {
+	color: white;
+	opacity: 0.5;
+	font-size: 0.7em;
 }
 /*Por si no funciona el breadcrumb*/
-.breadcrumb-item+.breadcrumb-item::before {
-    float: left;
-    padding-right: var(--bs-breadcrumb-item-padding-x);
-    color: rgb(255 255 255 / 75%);
-    content: var(--bs-breadcrumb-divider, "/");
+.breadcrumb-item + .breadcrumb-item::before {
+	float: left;
+	padding-right: var(--bs-breadcrumb-item-padding-x);
+	color: rgb(255 255 255 / 75%);
+	content: var(--bs-breadcrumb-divider, "/");
 }
-.vMore{
-    font-size: 1rem !important;
+ol,
+li {
+	list-style: none;
 }
-.title-news{
-    font-size: 1rem !important;
-    word-break: break-word;
-    color: #ffffff;
-    display: inline;
-    font-family: Barlow Semi Condensed,Arial,Helvetica,sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
+.vMore {
+	font-size: 1rem !important;
 }
-.title-news-red{
-    font-size: 1rem !important;
-    word-break: break-word;
-    color: #c00;
-    display: inline;
-    font-family: Barlow Semi Condensed,Arial,Helvetica,sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: .875rem !important;
-    margin-bottom: 0.25rem;
+.title-news {
+	font-size: 1rem !important;
+	word-break: break-word;
+	color: #ffffff;
+	display: inline;
+	font-family: Barlow Semi Condensed, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.title-news-red {
+	font-size: 1rem !important;
+	word-break: break-word;
+	color: #c00;
+	display: inline;
+	font-family: Barlow Semi Condensed, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 0.875rem !important;
+	margin-bottom: 0.25rem;
 }
 
 /*f5f7fa*/
-.card{
-    border: none !important;
-    border-radius: 0%;
+.card {
+	border: none !important;
+	border-radius: 0%;
 }
-.card-body{
-    padding: 0 !important;
+.card-body {
+	padding: 0 !important;
 }
-.card-body-right{
-    font-family: Barlow Semi Condensed,Arial,Helvetica,sans-serif;
-    font-size: 1.1875rem;
-    line-height: 1.21875rem;
-    letter-spacing: 0;
+.card-body-right {
+	font-family: Barlow Semi Condensed, Arial, Helvetica, sans-serif;
+	font-size: 1.1875rem;
+	line-height: 1.21875rem;
+	letter-spacing: 0;
 }
-.card-img-top{
-    border-radius: 0%;
+.card-img-top {
+	border-radius: 0%;
 }
 /*Oscurecer la imagen en la parte de abajo*/
-.card-img-overlay:not(.card-img-overlay.card-overlay-2){
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+.card-img-overlay:not(.card-img-overlay.card-overlay-2) {
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
 }
 /*Title-notice al final*/
-.title-notice{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 0.5em;
+.title-notice {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.5em;
 }
-.title-notice a{
-    color: #ffffff !important;
-    font-family: Roboto Condensed,Arial,Helvetica,sans-serif;
-    font-weight: 800;
-    text-decoration: none;
+.title-notice a {
+	color: #ffffff !important;
+	font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	text-decoration: none;
 }
-.title-notice a:hover{
-    color: #f4f4f4 !important;
+.title-notice a:hover {
+	color: #f4f4f4 !important;
 }
-.card-v2{
-    font-family: Roboto Condensed,Arial,Helvetica,sans-serif;
-    font-weight: 800;
+.card-v2 {
+	font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
+	font-weight: 800;
 }
-.author{
-    color: #000 !important;
-    font-family: Roboto Condensed,Arial,Helvetica,sans-serif;
-    font-weight: 800;
+.author {
+	color: #000 !important;
+	font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
+	font-weight: 800;
 }
-.author-mini{
-    color: #000 !important;
-    font-family: Roboto Condensed,Arial,Helvetica,sans-serif;
-    font-weight: 800;
-    font-size: 0.75rem;
+.author-mini {
+	color: #000 !important;
+	font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
+	font-weight: 800;
+	font-size: 0.75rem;
 }
-.card-mini{
-    background-color: #f7f5fa;
+.card-mini {
+	background-color: #f7f5fa;
 }
 
-.social-networks{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
+.social-networks {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
 }
-.social-networks li{
-    margin-right: 0.5em;
+.social-networks li {
+	margin-right: 0.5em;
 }
-select.form-select{
-    font-size: small;
+select.form-select {
+	font-size: small;
 }
-.equipoCarrusel img{
-    width: 14%;
-    height: 14%;
+.equipoCarrusel img {
+	width: 14%;
+	height: 14%;
 }
-.equipoCarrusel{
-    font-size: smaller;
-    white-space: nowrap;
-    text-overflow: ellipsis !important;
-    overflow: hidden;
+.equipoCarrusel {
+	font-size: smaller;
+	white-space: nowrap;
+	text-overflow: ellipsis !important;
+	overflow: hidden;
 }
-.equipoCarrusel>p{
-    margin-bottom: -1% !important;
+.equipoCarrusel > p {
+	margin-bottom: -1% !important;
 }
-.card-resultado{
-    border: 1px solid rgb(214,213,213) !important;
-    /*shadow*/
-    box-shadow: 0 0 0 0.25rem rgb(214 213 213 / 50%);
-    border-radius: 0%;
+.card-resultado {
+	border: 1px solid rgb(214, 213, 213) !important;
+	/*shadow*/
+	box-shadow: 0 0 0 0.25rem rgb(214 213 213 / 50%);
+	border-radius: 0%;
 }
 .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center;
-    /*Poner siempre al frente*/
-    z-index: 1000;
+	flex-basis: 100%;
+	flex-grow: 1;
+	align-items: center;
+	/*Poner siempre al frente*/
+	z-index: 1000;
+}
+.carousel-control-prev,
+.carousel-control-next {
+	background-color: gray;
+	width: 2em !important;
+	height: 2em !important;
+	top: 50%;
+}
+/* Inicialmente, oculta el menú desplegable */
+.dropdown-menu {
+	display: none;
+}
+
+/* Cuando se pasa el ratón sobre el botón, muestra el menú desplegable */
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+/* Opcional: Agrega estilos para mejorar la apariencia */
+.dropdown-toggle {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.dropdown-menu {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	position: absolute;
+}
+
+@media (min-width: 768px) {
+    #motorDropdown{
+        /*margin-left: -16.5rem;*/
+        width: 100% !important;
+    }
 }
