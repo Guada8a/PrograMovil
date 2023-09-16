@@ -103,9 +103,7 @@
 					<aside class="main-site-highlights d-none d-lg-block">
 						<ul>
 							<li class="main-highlight-radio">
-								<a
-									href="https://www.marca.com/radio.html?intcmp=BOTONPORTADA&amp;s_kw=radiomarca"
-								>
+								<a href="https://www.marca.com/radio.html?intcmp=BOTONPORTADA&amp;s_kw=radiomarca">
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										width="46"
@@ -156,7 +154,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="patrocinio hidden">
+							<li class="patrocinio">
 								<a href="https://cuidateplus.marca.com" title="CuídatePlus.com">
 									<svg
 										style="height: 46px; width: 46px"
@@ -190,7 +188,7 @@
 									<strong>CuídatePlus</strong>
 								</a>
 							</li>
-							<li class="patrocinio hidden">
+							<li class="patrocinio">
 								<a
 									href="https://www.marca.com/mx/trending.html"
 									title="Lo + Trending"
@@ -263,13 +261,18 @@
 			</div>
 		</header>
         <!-- Barra de navegación ROJA-->
-        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #c00; height: 44px !important">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #c00; height: 44px !important" id="barra-roja">
             <div class="container">
                 <button class="navbar-toggler justify-content-center w-100" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #c00; height: 44px !important">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="navbar-brand fw-bold nav-item my-auto d-none" id="logo_blanco">
+                            <div class="logo-letter">
+                                <img src="img/m-blanco.png">
+                            </div>
+                        </li>
                         <li class="navbar-brand fw-bold nav-item dropdown">
                             <a class="nav-link text-white item-nav-red" href="#" role="button" data-bs-target="#menuDrop" aria-expanded="false">
                                 F&uacute;tbol
@@ -620,7 +623,26 @@
             </div>
         </nav>
         <!-- Barra de navegación BLANCA || SCROLL-->
-        <nav class="navbar navbar-expand-md" style="background-color: #eee;z-index: 1;">
+        <nav class="navbar navbar-expand-md navbar-light d-none" style="background-color: #fff;" id="barra-blanca">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #fff; height: 44px !important; border-bottom: 0.2em solid #c00">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="navbar-brand fw-bold nav-item my-auto">
+                            <div class="logo-letter-red">
+                                <img src="img/m.png">
+                            </div>
+                        </li>
+                        <li class="navbar-brand fw-bold nav-item dropdown">
+                            <a class="nav-link item-nav-red" href="#" role="button" data-bs-target="#menuDrop" aria-expanded="false">
+                                Portada
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Barra equipos-->
+        <nav class="navbar navbar-expand-md" style="background-color: #eee;">
             <div class="container">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent_Equipos">
                     <ul class="navbar-nav mb-2 mb-lg-0">
@@ -1118,7 +1140,7 @@
                 <!-- Inicia sección de resultados-->
                 <section class="banner">
                     <div class="row  bg-body-secondary">
-                        <div class="col-md-1 col-sm-1 col-xs-1 my-auto">
+                        <div class="col-md-1 col-sm-1 col-xs-12 my-auto">
                             <div class="row m-1 text-center">
                                 <small class="fw-bold">Resultados</small>
                             </div>
@@ -1128,7 +1150,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-10 col-sm-10 col-xs-10 bg-body-secondary" style="border-left: 1px solid rgb(214, 213, 213); border-right: 1px solid rgb(214, 213, 213)">
+                        <div class="col-md-11 col-sm-11 col-xs-12 bg-body-secondary" style="border-left: 1px solid rgb(214, 213, 213); border-right: 1px solid rgb(214, 213, 213)">
                             <div id="carouselExample" class="carousel slide">
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -1165,7 +1187,7 @@
                                             <div class="col-6 col-md-6 mt-2">
                                                 <label class="text-center fw-bold" style="font-size:smaller"><img src="https://a.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F22.png" height="30px"> LIGA BBVA MX</label>
                                                 <div class="row">
-                                                    <div class="col">
+                                                    <div class="col-12 col-md-6 col-sm-6 col-xs-12">
                                                         <div class="card card-resultado mb-2" style="background-color: #f7f7f7;">
                                                             <div class="card-body m-1">
                                                                 <div class="row">
@@ -1188,7 +1210,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col" style="margin-left: -10px;">
+                                                    <div class="col-12 col-md-6 col-sm-6 col-xs-12" style="margin-left: -10px;">
                                                         <div class="card card-resultado mb-2" style="background-color: #f7f7f7;">
                                                             <div class="card-body m-1">
                                                                 <div class="row">
@@ -1218,7 +1240,7 @@
                                                 <div class="card card-resultado mb-2" style="background-color: #f7f7f7;">
                                                     <div class="card-body m-1">
                                                         <div class="row">
-                                                            <label class="equipoCarrusel text-center m-1">19:05</label>
+                                                            <label class="equipoCarrusel text-center m-1 fw-bold">FIN</label>
                                                             <div class="col-8">
                                                                 <p class="equipoCarrusel">
                                                                     <img class="ue-c-scoreboard-dual__team-badge" src="https://e00-marca.uecdn.es/assets/sports/logos/football/png/72x72/184.png" alt="">
@@ -1229,9 +1251,9 @@
                                                                 </p>
                                                             </div>
                                                             <div class="col-4 text-end">
-                                                                <span class="e badge bg-secondary">-</span>
+                                                                <span class="e badge bg-secondary">2</span>
                                                                 <br>
-                                                                <span class="badge bg-secondary">-</span>
+                                                                <span class="badge bg-secondary">0</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1383,7 +1405,7 @@
                                         <div class="col-md-7 col-sm-6 col-xs-8">
                                             <div class="card-body card-body-right">
                                                 <h5 class="card-title title-news-red">F&Uacute;TBOL FEMENIL</h5>
-                                                <p class="card-text">
+                                                <p class="card-text hover-text">
                                                     <a href="https://www.marca.com/mx/futbol/futbol-femenil/2023/09/11/64fe41e646163f1e2a8b45ae.html" class="text-dark">
                                                         Jenni Hermoso recibe homenaje, pasillo y mural en Estadio Hidalgo
                                                     </a>
@@ -1405,7 +1427,7 @@
                                         <div class="col-md-7 col-sm-6 col-xs-8">
                                             <div class="card-body card-body-right">
                                                 <h5 class="card-title title-news-red">TIGRES 1-2 AM&Eacute;RICA</h5>
-                                                <p class="card-text">
+                                                <p class="card-text hover-text">
                                                     <a href="https://www.marca.com/mx/futbol/liga-mx/2023/09/11/64fe5a23e2704ebe5a8b4582.html" class="text-dark">
                                                         América vence a Tigres en ensayo antes del Cl&aacute;sico ante Chivas
                                                     </a>
@@ -1426,19 +1448,19 @@
                                     <div class="row mt-2 mb-1">
                                         <div class="col-md-7 col-sm-6 col-xs-8">
                                             <div class="card-body card-body-right">
-                                                <h5 class="card-title title-news-red">TENIS</h5>
-                                                <p class="card-text">
-                                                    <a href="https://www.marca.com/mx/tenis/2023/09/11/64fe558de2704e8e6b8b458e.html" class="text-dark">
-                                                        Novak Djokovic conquista el US Open y llega a 24 t&iacute;tulos de Grand Slam
+                                                <h5 class="card-title title-news-red">LIGA MX</h5>
+                                                <p class="card-text hover-text">
+                                                    <a href="https://www.marca.com/mx/futbol/liga-mx/2023/09/15/6504cf3ee2704e27b78b45bd.html" class="text-dark">
+                                                        América vs Chivas: Se garantiza el lleno en el Estadio Azteca para el Clásico Nacional
                                                     </a>
                                                 </p>
                                             </div>
                                             <p class="card-text mt-2">
-                                                <small class="author-mini">LW</small>
+                                                <small class="author-mini">REDACCI&Oacute;N MARCA MX</small>
                                             </p>
                                         </div>
                                         <div class="col-md-5 col-sm-6 col-xs-4">
-                                            <img src="https://phantom-marca-mx.unidadeditorial.es/45c8f79adc338cdf3ef54f95b99aa182/resize/286/f/webp/mx/assets/multimedia/imagenes/2023/09/11/16943904135415.jpg" class="img-fluid w-100" alt="...">
+                                            <img src="https://phantom-marca-mx.unidadeditorial.es/3373e619dd01647b6f1c375e295e9fe1/resize/828/f/webp/mx/assets/multimedia/imagenes/2023/09/15/16948139767436.jpg" class="img-fluid w-100" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -1449,7 +1471,7 @@
                                         <div class="col-md-7 col-sm-6 col-xs-8">
                                             <div class="card-body card-body-right">
                                                 <h5 class="card-title title-news-red">SELECCI&Oacute;N NACIONAL DE M&Eacute;XICO</h5>
-                                                <p class="card-text">
+                                                <p class="card-text hover-text">
                                                     <a href="https://www.marca.com/mx/futbol/2023/09/10/64fddca646163fa3438b459a.html" class="text-dark">
                                                         Partidos de hoy Fecha FIFA: horarios y canales | 11 de septiembre
                                                     </a>
@@ -1480,7 +1502,7 @@
                                     <h5 class="card-title title-news badge" style="background-color: #a20004;">MLS</h5>
                                 </div>
                                 <div class="card-body mt-2">
-                                    <p class="card-text h5 card-v2">
+                                    <p class="card-text h5 card-v2 hover-text">
                                         <a href="https://www.marca.com/mx/futbol/2023/09/10/64fddca646163fa3438b459a.html" class="text-dark">
                                             ¿Cuántos puntos necesitan Messi e Inter Miami para llegar a playoffs de MLS? Vencen a Pulido y se acercan
                                         </a>
@@ -1496,7 +1518,7 @@
                                     <h5 class="card-title title-news badge" style="background-color: #a20004;">SELECCI&Oacute;N NACIONAL DE M&Eacute;XICO</h5>
                                 </div>
                                 <div class="card-body mt-2">
-                                    <p class="card-text h5 card-v2">
+                                    <p class="card-text h5 card-v2 hover-text">
                                         <a href="https://www.marca.com/mx/futbol/seleccion-mx/album/2023/09/10/64fdf03846163fe58d8b456d.html" class="text-dark">
                                             Chino Huerta y los MEMES del empate de Selección Mexicana vs Australia
                                         </a>
@@ -1512,7 +1534,7 @@
                                     <h5 class="card-title title-news badge" style="background-color: #a20004;">F&Oacute;RMULA 1</h5>
                                 </div>
                                 <div class="card-body mt-2">
-                                    <p class="card-text h5 card-v2">
+                                    <p class="card-text h5 card-v2 hover-text">
                                         <a href="https://www.marca.com/mx/motor/formula-1/2023/09/11/64ff2eaa22601dac758b4578.html" class="text-dark">
                                             Checo P&eacute;rez lo tiene claro en Singapur: "Si no inicias adelante, es poco probable la victoria"
                                         </a>
@@ -1521,49 +1543,62 @@
                                 <hr class="d-block d-sm-none d-md-none">
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="row">
+                                <div class="card card-mini mb-3">
+                                    <div class="row mt-2 mb-1">
+                                        <div class="col-md-5 col-sm-5 col-xs-8">
+                                            <div class="card-body card-body-right">
+                                                <h5 class="card-title title-news-red">F&Uacute;TBOL FEMENIL</h5>
+                                                <p class="card-text hover-text">
+                                                    <a href="https://www.marca.com/mx/futbol/seleccion-mx/album/2023/09/10/64fdf03846163fe58d8b456d.html" class="text-dark">
+                                                        Con algunas novedades, Selección Mexicana Femenil anuncia convocadas para clasificatorios a Copa Oro W2023
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p class="card-text mt-2">
+                                                <small class="author-mini">ABIGAIL PARRA / PACHUCA, HIDALGO</small>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7 col-xs-4">
+                                            <img src="https://phantom-marca-mx.unidadeditorial.es/be6e1227ff6fb86c56137cfa0d7cc68f/resize/828/f/webp/mx/assets/multimedia/imagenes/2023/09/15/16947289846592.jpg" class="card-img-top">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-mini mb-3">
+                                    <div class="row mt-2 mb-1">
+                                        <div class="col-md-4 col-sm-4 col-xs-8">
+                                            <div class="card-body card-body-right">
+                                                <h5 class="card-title title-news-red">MEXICANOS POR EL MUNDO</h5>
+                                                <p class="card-text hover-text">
+                                                    <a href="https://www.marca.com/mx/futbol/seleccion-mx/album/2023/09/10/64fdf03846163fe58d8b456d.html" class="text-dark">
+                                                        Raúl Jiménez "El Cansador de Pibes" cansó a los Gunners y casi mete un golazo ante el Arsenal
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p class="card-text mt-2">
+                                                <small class="author-mini">ABIGAIL PARRA / PACHUCA, HIDALGO</small>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-8 col-sm-8 col-xs-4">
+                                            <img src="https://www.sopitas.com/wp-content/uploads/2023/08/reacciones-casi-gol-raul-jimenez-prensa-inglaterra-espana-fulham.png" class="card-img-top">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="card mb-3">
-                                <img src="https://phantom-marca-mx.unidadeditorial.es/0bb152f23ce727629736ba77f959cea4/resize/828/f/webp/mx/assets/multimedia/imagenes/2023/09/14/16947165416730.jpg" class="card-img-top" style="max-height: 201px;">
+                                <img src="https://phantom-marca-mx.unidadeditorial.es/0bb152f23ce727629736ba77f959cea4/resize/828/f/webp/mx/assets/multimedia/imagenes/2023/09/14/16947165416730.jpg" class="card-img-top" >
                                 <div class="card-img-overlay card-overlay-2">
                                     <h5 class="card-title title-news badge" style="background-color: #a20004;">MEXICANOS POR EL MUNDO</h5>
                                 </div>
                                 <div class="card-body mt-2">
-                                    <p class="card-text h5 card-v2">
+                                    <p class="card-text h5 card-v2 hover-text">
                                         <a href="https://www.marca.com/mx/futbol/seleccion-mx/album/2023/09/10/64fdf03846163fe58d8b456d.html" class="text-dark">
                                             Santiago Giménez, una de las dos opciones que tiene Chelsea en lupa
-                                        </a>
-                                    </p>
-                                </div>
-                                <hr class="d-block d-sm-none d-md-none">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="card mb-3">
-                                <img src="https://phantom-marca-mx.unidadeditorial.es/be6e1227ff6fb86c56137cfa0d7cc68f/resize/828/f/webp/mx/assets/multimedia/imagenes/2023/09/15/16947289846592.jpg" class="card-img-top" style="max-height: 201px;">
-                                <div class="card-img-overlay card-overlay-2">
-                                    <h5 class="card-title title-news badge" style="background-color: #a20004;">F&Uacute;TBOL FEMENIL</h5>
-                                </div>
-                                <div class="card-body mt-2">
-                                    <p class="card-text h5 card-v2">
-                                        <a href="https://www.marca.com/mx/futbol/seleccion-mx/album/2023/09/10/64fdf03846163fe58d8b456d.html" class="text-dark">
-                                            Con algunas novedades, Selección Mexicana Femenil anuncia convocadas para clasificatorios a Copa Oro W2023
-                                        </a>
-                                    </p>
-                                </div>
-                                <hr class="d-block d-sm-none d-md-none">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="card mb-3">
-                                <img src="https://www.sopitas.com/wp-content/uploads/2023/08/reacciones-casi-gol-raul-jimenez-prensa-inglaterra-espana-fulham.png" class="card-img-top" style="max-height: 201px;">
-                                <div class="card-img-overlay card-overlay-2">
-                                    <h5 class="card-title title-news badge" style="background-color: #a20004;">MEXICANOS POR EL MUNDO</h5>
-                                </div>
-                                <div class="card-body mt-2">
-                                    <p class="card-text h5 card-v2">
-                                        <a href="https://www.marca.com/mx/futbol/seleccion-mx/album/2023/09/10/64fdf03846163fe58d8b456d.html" class="text-dark">
-                                            Raúl Jiménez "El Cansador de Pibes" cansó a los Gunners y casi mete un golazo ante el Arsenal
-                                            
                                         </a>
                                     </p>
                                 </div>
@@ -1608,30 +1643,47 @@
                 </section>
             </footer>
 		</main>
+        <!-- Scripts -->
 		<script>
 			//Jquery
 			$(document).ready(function () {
-                /*
-				$('.card').hover(
-                    //Animación de entrada
-                    function () {
-                        $(this).animate({
-                            marginTop: "-=1%",
-                        }, 200);
-                    },
-                    //Animación de salida
-                    function () {
-                        $(this).animate({
-                            marginTop: "0%",
-                        }, 200);
-                    }
-                );*/
                 $('.title-notice-child').hover(
                     //Cambiar color de texto
                     function () {
                         $(this).css("color", "#a20004");
                     },
                 )
+                //Variables
+                var scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() == 0) {
+                        $('#barra-roja').removeClass('d-none');
+                        $('#barra-blanca').addClass('d-none');
+                        $('#logo_blanco').addClass('d-none');
+                    } else {
+                        var currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+                        if (currentScrollPos > scrollPos) {
+                            // El usuario está haciendo scroll hacia abajo
+                            $('#logo_blanco').removeClass('d-none');
+                            $('#barra-roja').addClass('d-none');
+                            $('#barra-blanca').removeClass('d-none');
+                            $('#barra-blanca').css('position', 'sticky');
+                            $('#barra-blanca').css('top', '0');
+                            $('#barra-blanca').css('z-index', '1001');
+                        } else {
+                            // El usuario está haciendo scroll hacia arriba
+                            $('#logo_blanco').removeClass('d-none');
+                            $('#barra-roja').removeClass('d-none');
+                            $('#barra-blanca').addClass('d-none');
+                            $('#barra-roja').css('position', 'sticky');
+                            $('#barra-roja').css('top', '0');
+                            $('#barra-roja').css('z-index', '1001');
+                        }   
+                        // Actualizar la posición anterior del scroll
+                        scrollPos = currentScrollPos;
+                    }
+                });
 	        });
 		</script>
 		<!-- Footer -->

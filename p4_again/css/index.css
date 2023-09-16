@@ -346,6 +346,16 @@ a {
 }
 /* Estilo para el logotiporgba(20,29,37,.97) "M" dentro del rectángulo con esquinas diagonales */
 .logo-letter {
+	background-color: #fff; /* Color de fondo del rectángulo */
+	color: white; /* Color de la letra */
+	width: 44px; /* Ancho del rectángulo */
+	height: 44px; /* Altura del rectángulo */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.logo-letter-red {
 	background-color: #c00; /* Color de fondo del rectángulo */
 	color: white; /* Color de la letra */
 	width: 44px; /* Ancho del rectángulo */
@@ -354,7 +364,6 @@ a {
 	justify-content: center;
 	align-items: center;
 	clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
-	margin-top: 0.3em;
 }
 .hidden {
 	display: none;
@@ -500,7 +509,7 @@ li {
 	font-weight: 800;
 	text-decoration: none;
 }
-.title-notice-child:hover {
+.title-notice-child:hover, .hover-text>a:hover, .card-v2>a:hover {
 	color: #c1bfbf !important;
 }
 .card-v2 {
@@ -601,3 +610,6 @@ select.form-select {
         width: 100% !important;
     }
 }
+
+/* Funcionamiento barras */
+/* Scroll */
