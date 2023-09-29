@@ -26,7 +26,10 @@
 .list-seo-links.horizontal li:not(:first-child)::before {
 	content: "/";
 }
-
+#navSupportedContent1{
+    background-color: #c00;
+    height: 44px !important;
+}
 .list-seo-links.horizontal a {
 	text-decoration: none;
 	color: #333;
@@ -558,6 +561,10 @@ li {
 .card-v2 {
 	font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
 	font-weight: 800;
+}
+h2{
+    font-size: 1.1875rem !important;
+    line-height: 1.21875rem !important;
 }
 .author {
 	color: #000 !important;
